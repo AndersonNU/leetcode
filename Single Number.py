@@ -11,12 +11,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        dict = {}
-        for num in nums:
-            dict[num] = dict.get(num, 0) + 1
-        for key, val in dict.items():
-            if val == 1:
-                return key
+        # ================ This works too============
+        # dict = {}
+        # for num in nums:
+        #     dict[num] = dict.get(num, 0) + 1
+        # for key, val in dict.items():
+        #     if val == 1:
+        #         return key
         # ==========this doesn't work because of time limits'============
         # List = []
         # for num in nums:
@@ -25,6 +26,10 @@ class Solution(object):
         #     else:
         #         List.append(num)
         # return List[0]
+        res = 0
+        for num in nums:
+            res ^= num
+        return res
 
 List = [1,0,0,1,2,3,2,4,4]
 # List = [-1]
