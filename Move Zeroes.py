@@ -12,10 +12,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
-        for num in nums:
-            print(nums)
+        for num in nums[:]:
             if num is 0:
-                del nums
+                nums.append(num)
+                nums.remove(num)
 
 
 nums = [0, 1, 0, 3, 12]
