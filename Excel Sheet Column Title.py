@@ -25,4 +25,4 @@ class Solution(object):
 
 
 object = Solution()
-print(object.convertToTitle(300))
+print(object.convertToTitle(55))

@@ -41,5 +41,6 @@ class Solution(object):
 
 
 nums = [5,4,0,3,1,6,2]
+#............................
 object = Solution()
 print(object.arrayNesting(nums))
