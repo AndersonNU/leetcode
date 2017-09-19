@@ -20,7 +20,6 @@ class Solution(object):
     :rtype: List[List[int]]
     """
 
-
       perms = [[]]
       for n in nums:
         new_perms = []
@@ -28,4 +27,4 @@ class Solution(object):
           for i in xrange(len(perm) + 1):
             new_perms.append(perm[:i] + [n] + perm[i:])  ###insert n
         perms = new_perms
-      return perms        
+      return perms
