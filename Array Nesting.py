@@ -39,7 +39,6 @@ class Solution(object):
             step = 0
         return ans
 
-
 nums = [5,4,0,3,1,6,2]
 #............................
 object = Solution()

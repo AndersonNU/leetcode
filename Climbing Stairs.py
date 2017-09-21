@@ -10,12 +10,17 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n == 1:
-            return 1
-        elif n == 2:
-            return 2
-        if n > 2:
-            return self.climbStairs(n-1) + self.climbStairs(n-2)
+        # if n == 1:
+        #     return 1
+        # elif n == 2:
+        #     return 2
+        # if n > 2:
+        #     return self.climbStairs(n-1) + self.climbStairs(n-2)
+
+        a = b = 1
+        for _ in range(n):
+            a, b = b, a + b
+        return a
 
 n = 4
 object = Solution()
