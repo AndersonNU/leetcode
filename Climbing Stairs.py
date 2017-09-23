@@ -25,3 +25,7 @@ class Solution(object):
 n = 4
 object = Solution()
 print(object.climbStairs(n))
+
+for i in range(-100,100):
+    # if 95**i > i ** 100:
+    print(i)
