@@ -11,8 +11,13 @@ class Solution(object):
         :rtype: int
         """
         while b is not 0:
+                # Operator copies a bit to the result if it exists in both operands
+                # 3 is 011; 6 is 110; So 3 & 6 is 010, which is 2
                 carry = a & b
+                # It copies the bit if it is set in one operand but not both.
+                # so a ^ b = 101, which is 5
                 a = a ^ b
+                # The left operands value is moved left by the number of bits specified by the right operand.
                 b = carry << 1
         return a
 

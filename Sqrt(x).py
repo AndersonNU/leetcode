@@ -20,6 +20,7 @@ class Solution(object):
 
         r = x
         while r*r - x > 0:
+            # Get the divided integer
             r = (r + x//r)//2
         return int(r)
 
