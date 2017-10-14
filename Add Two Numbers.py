@@ -8,10 +8,10 @@
 
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
@@ -20,7 +20,7 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-<<<<<<< HEAD
+
         carry = 0
         root = n = ListNode(0)
         while l1 or l2 or carry:
@@ -35,5 +35,4 @@ class Solution(object):
             n.next = ListNode(val)
             n = n.next
         return root.next
-=======
->>>>>>> 5318e1b747f5e2fa05e3fac2800dd0de46b763bd
+
