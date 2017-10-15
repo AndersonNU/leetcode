@@ -25,5 +25,5 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-
+        # The sum of the longest on the left side + the longest on the right side
 
